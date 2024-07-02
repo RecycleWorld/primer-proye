@@ -1,0 +1,87 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+    width: 800px; /* Ancho del contenedor del juego en píxeles */
+    height: 965px; /* Alto del contenedor del juego en píxeles */
+    background-image: url('fondo.jpg');
+    background-size: contain; /* Ajusta la imagen para que quepa completamente dentro del contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita la imagen */
+    display: flex; /* Utiliza flexbox para centrar contenido si es necesario */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Acomoda los contenedores de botones en columna vertical */
+}
+
+.button-container {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde arriba */
+    right: 80px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Utiliza flexbox para los botones */
+    flex-direction: column; /* Acomoda los botones en columna vertical */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    z-index: 1; /* Asegura que los botones estén sobre la imagen de fondo */
+}
+
+.button-container-2 {
+    position: absolute;
+    bottom: 10px; /* Ajusta la distancia desde abajo */
+    right: 87px; /* Ajusta la distancia desde la derecha */
+    display: flex; /* Utiliza flexbox para los botones */
+    flex-direction: row; /* Acomoda los botones en columna vertical */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    z-index: 1; /* Asegura que los botones estén sobre la imagen de fondo */
+}
+
+.game-button {
+    padding: 0; /* Elimina el padding para que las imágenes ocupen todo el espacio del botón */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background: none; /* Elimina el fondo del botón */
+}
+
+.game-button img {
+    display: block; /* Asegura que las imágenes sean elementos de bloque */
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al 100% del botón */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
+/* Estilos específicos para cada botón */
+.button-1 {
+    margin-top: 10px; /* Ajusta la distancia desde el botón anterior */
+}
+.button-1 img {
+    width: 80px; /* Ajusta el ancho específico para el botón 1 */
+    height: 120px; /* Ajusta la altura específica para el botón 1 */
+}
+
+.button-2 {
+    margin-top: 20px; /* Ajusta la distancia desde el botón anterior */
+}
+.button-2 img {
+    width: 80px; /* Ajusta el ancho específico para el botón 2 */
+    height: 110px; /* Ajusta la altura específica para el botón 2 */
+}
+
+.button-3 {
+    margin-left: 33px; /* Ajusta la distancia desde el botón anterior */
+}
+.button-3 img {
+    width: 83px; /* Ajusta el ancho específico para el botón 3 */
+    height: 83px; /* Ajusta la altura específica para el botón 3 */
+}
+
+.button-4 {
+    margin-left: 27px; /* Ajusta la distancia desde el botón de la izquierda */
+}
+.button-4 img {
+    width: 85px; /* Ajusta el ancho específico para el botón 4 */
+    height: 85px; /* Ajusta la altura específica para el botón 4 */
+}
